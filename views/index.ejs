@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>English Teaching Admin</title>
+</head>
+<body>
+    <h1>Welcome <%= user ? user.username : 'Guest' %></h1>
+    <% if (!user) { %>
+        <a href="/login">Login</a>
+    <% } else { %>
+        <a href="/admin">Go to Admin</a>
+    <% } %>
+</body>
+</html>

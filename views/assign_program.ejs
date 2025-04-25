@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>Gán chương trình học</title></head>
+<body>
+    <h2>Gán chương trình học cho lớp</h2>
+    <form method="POST" action="/program/assign">
+        <label>Lớp: 
+            <select name="className">
+                <% classes.forEach(c => { %>
+                    <option><%= c.name %></option>
+                <% }) %>
+            </select>
+        </label><br>
+        <label>Chương trình học: 
+            <select name="programTitle">
+                <% programs.forEach(p => { %>
+                    <option><%= p.title %></option>
+                <% }) %>
+            </select>
+        </label><br>
+        <button type="submit">Gán</button>
+    </form>
+</body>
+</html>

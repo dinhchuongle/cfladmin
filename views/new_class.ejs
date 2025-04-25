@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Tạo lớp mới</title></head>
+<body>
+    <h2>Tạo lớp học mới</h2>
+    <form method="POST" action="/class/new">
+        <label>Tên lớp: <input name="name" required></label><br>
+        <label>Ngày khai giảng: <input name="startDate" type="date" required></label><br>
+        <label>Thời lượng (tuần): <input name="durationWeeks" type="number" required></label><br>
+        <label>Lịch học (VD: T3-T5): <input name="schedule" required></label><br>
+        <label>Giáo viên: <input name="teacher" required></label><br>
+        <label>Zoom: <input name="zoomLink"></label><br>
+        <label>Nhóm Zalo: <input name="zaloGroup"></label><br>
+        <button type="submit">Tạo lớp</button>
+    </form>
+</body>
+</html>

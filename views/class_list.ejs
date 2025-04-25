@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Danh sách lớp</title></head>
+<body>
+    <h2>Danh sách lớp</h2>
+    <a href="/class/new">+ Thêm lớp mới</a>
+    <ul>
+    <% classes.forEach(cls => { %>
+        <li>
+            <b><%= cls.name %></b> - Bắt đầu: <%= cls.startDate %> - Giáo viên: <%= cls.teacher %>
+        </li>
+    <% }) %>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Chương trình học</title></head>
+<body>
+    <h2>Danh sách chương trình học</h2>
+    <a href="/program/new">+ Thêm chương trình học</a>
+    <ul>
+    <% programs.forEach(p => { %>
+        <li><b><%= p.title %></b> - <%= p.sessions %> buổi - Tài liệu: <%= p.material %></li>
+    <% }) %>
+    </ul>
+</body>
+</html>
